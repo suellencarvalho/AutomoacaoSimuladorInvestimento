@@ -93,14 +93,14 @@ public class TestSimuladorInvestimento {
 	  @Test public void testValidarResultadoPeriodoMeses() throws Exception {
 	  
 	  
-	  Map_Simulador_Investimento.clickradioPJ();
-	  Map_Simulador_Investimento.setValorAplicar("10000");
-	  Map_Simulador_Investimento.setValorInvestir("10000");
-	  Map_Simulador_Investimento.setTempo("2");
-	  Map_Simulador_Investimento.selecionarPeriodoMes("Meses");
-	  Map_Simulador_Investimento.clickbtnSubmit();
-	  Map_Simulador_Investimento.validarResultado();
-	  Map_Simulador_Investimento.validarTabela();
+		  Map_Simulador_Investimento.clickradioPJ();
+		  Map_Simulador_Investimento.setValorAplicar("10000");
+		  Map_Simulador_Investimento.setValorInvestir("10000");
+		  Map_Simulador_Investimento.setTempo("2");
+		  Map_Simulador_Investimento.selecionarPeriodoMes("Meses");
+		  Map_Simulador_Investimento.clickbtnSubmit();
+		  Map_Simulador_Investimento.validarResultado();
+		  Map_Simulador_Investimento.validarTabela();
 	  
 	  }
 	  
@@ -116,10 +116,10 @@ public class TestSimuladorInvestimento {
 		  Map_Simulador_Investimento.validarResultado();
 		  Map_Simulador_Investimento.validarTabela();
 		  
-		  }
+	  }
+	  
 	  @Test public void testValidarLimparFormulario() throws Exception {
-		  
-		  
+		  		  
 		  Map_Simulador_Investimento.clickradioPJ();
 		  Map_Simulador_Investimento.setValorAplicar("10000");
 		  Map_Simulador_Investimento.setValorInvestir("10000");
@@ -128,8 +128,7 @@ public class TestSimuladorInvestimento {
 		  Map_Simulador_Investimento.limparFormulario();
 		  Map_Simulador_Investimento.validarCampoPraVcSelecionado();
 		  Map_Simulador_Investimento.validarCamposVazios();
-		  
-		  }
+	  }
 	  
 	  @Test public void testMsgErroValorMaximo() throws Exception {
 		  
@@ -141,10 +140,11 @@ public class TestSimuladorInvestimento {
 		Map_Simulador_Investimento.validaMsgErroValorMaximoInvestir();
 		Map_Simulador_Investimento.clickbtnSubmit();
 		  
-		  }
+	  }
 	  
 	  @Test public void testErroAnosMaximo() throws Exception {
-	  	Map_Simulador_Investimento.clickradioPraVoce();
+	  
+		Map_Simulador_Investimento.clickradioPraVoce();
 		Map_Simulador_Investimento.setValorAplicar("15000");
 		Map_Simulador_Investimento.setValorInvestir("20000");
 		Map_Simulador_Investimento.selecionarPeriodoAnos();
@@ -155,14 +155,15 @@ public class TestSimuladorInvestimento {
 	  }
 	  
 	  @Test public void testMaximoMeses() throws Exception {
-	  Map_Simulador_Investimento.clickradioPJ();
-	  Map_Simulador_Investimento.setValorAplicar("10000");
-	  Map_Simulador_Investimento.setValorInvestir("10000");
-	  Map_Simulador_Investimento.setTempo("999");
-	  Map_Simulador_Investimento.selecionarPeriodoMes("Meses");
-	  Map_Simulador_Investimento.clickbtnSubmit();
-	  Map_Simulador_Investimento.validarResultado();
-	  Map_Simulador_Investimento.validarTabela();
+		  
+		  Map_Simulador_Investimento.clickradioPJ();
+		  Map_Simulador_Investimento.setValorAplicar("10000");
+		  Map_Simulador_Investimento.setValorInvestir("10000");
+		  Map_Simulador_Investimento.setTempo("999");
+		  Map_Simulador_Investimento.selecionarPeriodoMes("Meses");
+		  Map_Simulador_Investimento.clickbtnSubmit();
+		  Map_Simulador_Investimento.validarResultado();
+		  Map_Simulador_Investimento.validarTabela();
 	  }
 	  
 	  @Test public void testRefazerSimulacao() throws Exception {
@@ -178,7 +179,5 @@ public class TestSimuladorInvestimento {
 		  Map_Simulador_Investimento.validarCampoPraVcSelecionado();
 		  Map_Simulador_Investimento.validarCamposVazios();
 	  }
-	  
-	  
 	}
 
