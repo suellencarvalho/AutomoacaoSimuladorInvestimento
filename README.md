@@ -36,6 +36,7 @@ Quando: clicar no botão simular
 Então: o sistema apresenta mensagem informativa e não simula o investimento
 
 CT-4:
+
 Cenário: validar valor inferior que 20.00
 Dado: que foram informados nos campos de valor para investimento e valor a Aplicar um valor inferior a R$ 20.00
 Quando: clicar no botão simular
