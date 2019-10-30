@@ -1,5 +1,5 @@
 # prova_sicredi_SimuladorInvestimento
-Prova Técnica QA - Automatizando Simulador de Investimentos.
+
 
 História:
 Com o propósito de Simular um Investimento na Poupança
